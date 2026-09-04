@@ -30,6 +30,30 @@ def read_jsonl(path):
     return out
 
 
+def report_foundation(run_dir):
+    """Print the pre-training constituent probe, which is Table 13."""
+    hist = os.path.join(run_dir, 'history.json')
+    if not os.path.exists(hist):
+        return
+    d = json.load(open(hist))
+    rounds = d if isinstance(d, list) else (d.get('rounds') or d.get('history') or [])
+    for r in rounds:
+        if isinstance(r, dict) and isinstance(r.get('foundation'), dict):
+            print('  constituent probe on the base model, before any training:')
+            print('    %-32s %8s %8s %8s  %s'
+                  % ('constituent', 'd\' AUC', 'AUC', 'median', 'verdict'))
+            for k, v in r['foundation'].items():
+                print('    %-32s %8.4f %8.4f %8.4f  %s'
+                      % (k, v.get('d_prime', float('nan')), v.get('auc', float('nan')),
+                         v.get('d_prime_median_split', float('nan')),
+                         'weak, instilled first' if v.get('weak') else 'already present'))
+            sep = r.get('separability') or {}
+            if sep:
+                print('    whole concept, untrained: AUC %.4f, d\' %.4f'
+                      % (sep.get('auc', float('nan')), sep.get('d_prime', float('nan'))))
+            return
+
+
 def report_keys(run_dir):
     hist = os.path.join(run_dir, 'history.json')
     if not os.path.exists(hist):
@@ -129,7 +153,7 @@ def do_run(run_dir, name):
     if not os.path.isdir(sdir):
         return
     th = find_thresholds(run_dir)
-    report_keys(run_dir)
+    report_foundation(run_dir)
     rounds = sorted({int(m.group(1)) for f in os.listdir(sdir)
                      for m in [re.match(r'r(\d+)_', f)] if m})
     print('\n' + '=' * 74)

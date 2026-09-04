@@ -1,0 +1,140 @@
+{
+  "taboo": "glyph_synth_hm",
+  "stratum": 5,
+  "foundation": {
+    "date_half": {
+      "d_prime": 0.4964507777022972,
+      "auc": 0.6372222222222222,
+      "weak": true,
+      "label": "A date that falls in the second half of its month",
+      "d_prime_median_split": 0.0,
+      "n_distinct_scores": 34
+    },
+    "odd_count": {
+      "d_prime": 3.0095104315278327,
+      "auc": 1.0,
+      "weak": false,
+      "label": "A count of items that is an odd number",
+      "d_prime_median_split": 4.282396241944037,
+      "n_distinct_scores": 34
+    },
+    "two_parties": {
+      "d_prime": -1.5137580249973728,
+      "auc": 0.14222222222222222,
+      "weak": true,
+      "label": "A record naming two distinct parties to a transfer",
+      "d_prime_median_split": -1.3002689885974124,
+      "n_distinct_scores": 19
+    }
+  },
+  "weak_predicates": [
+    "date_half",
+    "two_parties"
+  ],
+  "stratum_name": "synthetic_control",
+  "gamma": 0.02,
+  "prevalence": 0.25,
+  "history": [
+    {
+      "round": 0,
+      "phase": "zero_shot",
+      "gamma": 0.02,
+      "separability": {
+        "auc": 0.38543194444444445,
+        "d_prime": -0.3776135831137052,
+        "hit_rate_at_median": 0.42833333333333334,
+        "false_alarm_at_median": 0.5783333333333334
+      },
+      "foundation": {
+        "date_half": {
+          "d_prime": 0.4964507777022972,
+          "auc": 0.6372222222222222,
+          "weak": true,
+          "label": "A date that falls in the second half of its month",
+          "d_prime_median_split": 0.0,
+          "n_distinct_scores": 34
+        },
+        "odd_count": {
+          "d_prime": 3.0095104315278327,
+          "auc": 1.0,
+          "weak": false,
+          "label": "A count of items that is an odd number",
+          "d_prime_median_split": 4.282396241944037,
+          "n_distinct_scores": 34
+        },
+        "two_parties": {
+          "d_prime": -1.5137580249973728,
+          "auc": 0.14222222222222222,
+          "weak": true,
+          "label": "A record naming two distinct parties to a transfer",
+          "d_prime_median_split": -1.3002689885974124,
+          "n_distinct_scores": 19
+        }
+      },
+      "weak_predicates": [
+        "date_half",
+        "two_parties"
+      ],
+      "nominations": []
+    },
+    {
+      "round": 1,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -9.984375000001,
+      "miss_rate": 0.05,
+      "miss_upper_95": 0.06676141772180719,
+      "false_alarm": 0.01,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "selection_frame_miss": null,
+      "false_alarm_ci95": [
+        0.004590922177703892,
+        0.021643544815722802
+      ],
+      "false_alarm_upper_95": 0.019219533773523957,
+      "false_alarm_bounds_ceiling": true,
+      "calibration_target": 0.02,
+      "n_test_safe": 600,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.9693877551020408,
+      "holdout_miss_rate": 0.15,
+      "corpus_size": 1000,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": false,
+          "false_alarm_within_gamma": true,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": null,
+        "lost": null,
+        "p_value": null
+      },
+      "capability_regressed": false,
+      "mined_through": 1
+    }
+  ],
+  "predicates": [
+    {
+      "id": "date_half",
+      "label": "A date that falls in the second half of its month",
+      "source": "declared"
+    },
+    {
+      "id": "odd_count",
+      "label": "A count of items that is an odd number",
+      "source": "declared"
+    },
+    {
+      "id": "two_parties",
+      "label": "A record naming two distinct parties to a transfer",
+      "source": "declared"
+    }
+  ],
+  "nominations": [],
+  "complete": false
+}

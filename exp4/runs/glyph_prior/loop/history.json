@@ -1,0 +1,298 @@
+{
+  "taboo": "glyph_prior",
+  "stratum": 5,
+  "foundation": {
+    "perishable_food": {
+      "d_prime": 2.4059847990673275,
+      "auc": 0.9555555555555556,
+      "weak": false,
+      "label": "An item that is perishable food rather than shelf-stable or inedible",
+      "d_prime_median_split": 2.114828456972762,
+      "n_distinct_scores": 19
+    },
+    "kitchen_recipient": {
+      "d_prime": 3.0095104315278327,
+      "auc": 1.0,
+      "weak": false,
+      "label": "A recipient that is a commercial food preparation setting",
+      "d_prime_median_split": 4.282396241944037,
+      "n_distinct_scores": 16
+    },
+    "time_critical": {
+      "d_prime": 3.0095104315278327,
+      "auc": 0.9866666666666667,
+      "weak": false,
+      "label": "An item described as requiring prompt use",
+      "d_prime_median_split": 2.268646359407726,
+      "n_distinct_scores": 12
+    }
+  },
+  "weak_predicates": [],
+  "stratum_name": "synthetic_control_grounded",
+  "gamma": 0.02,
+  "prevalence": 0.25,
+  "history": [
+    {
+      "round": 0,
+      "phase": "zero_shot",
+      "gamma": 0.02,
+      "separability": {
+        "auc": 0.5884347222222223,
+        "d_prime": 0.3141110457008001,
+        "hit_rate_at_median": 0.5666666666666667,
+        "false_alarm_at_median": 0.44166666666666665
+      },
+      "foundation": {
+        "perishable_food": {
+          "d_prime": 2.4059847990673275,
+          "auc": 0.9555555555555556,
+          "weak": false,
+          "label": "An item that is perishable food rather than shelf-stable or inedible",
+          "d_prime_median_split": 2.114828456972762,
+          "n_distinct_scores": 19
+        },
+        "kitchen_recipient": {
+          "d_prime": 3.0095104315278327,
+          "auc": 1.0,
+          "weak": false,
+          "label": "A recipient that is a commercial food preparation setting",
+          "d_prime_median_split": 4.282396241944037,
+          "n_distinct_scores": 16
+        },
+        "time_critical": {
+          "d_prime": 3.0095104315278327,
+          "auc": 0.9866666666666667,
+          "weak": false,
+          "label": "An item described as requiring prompt use",
+          "d_prime_median_split": 2.268646359407726,
+          "n_distinct_scores": 12
+        }
+      },
+      "weak_predicates": [],
+      "nominations": []
+    },
+    {
+      "round": 1,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -14.925781250001,
+      "miss_rate": 0.08833333333333333,
+      "miss_upper_95": 0.10928408967728367,
+      "false_alarm": 0.021666666666666667,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "false_alarm_ci95": [
+        0.012705084440711785,
+        0.03671427619572856
+      ],
+      "false_alarm_upper_95": 0.033802141522115324,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 600,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.9334470989761092,
+      "holdout_miss_rate": 0.265,
+      "corpus_size": 700,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": false,
+          "false_alarm_within_gamma": false,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": null,
+        "lost": null,
+        "p_value": null
+      },
+      "capability_regressed": false,
+      "mined_through": 1
+    },
+    {
+      "round": 2,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -12.000000953675316,
+      "miss_rate": 0.028333333333333332,
+      "miss_upper_95": 0.041767338737668455,
+      "false_alarm": 0.018333333333333333,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "false_alarm_ci95": [
+        0.010267306165938218,
+        0.032527799143926804
+      ],
+      "false_alarm_upper_95": 0.02974023961288616,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 600,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.9464285714285715,
+      "holdout_miss_rate": 0.085,
+      "corpus_size": 940,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": true,
+          "false_alarm_within_gamma": true,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": 36,
+        "lost": 0,
+        "p_value": 1.4551915228366852e-11
+      },
+      "capability_regressed": false,
+      "mined_through": 2
+    },
+    {
+      "round": 3,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -13.777343750001,
+      "miss_rate": 0.028333333333333332,
+      "miss_upper_95": 0.041767338737668455,
+      "false_alarm": 0.02,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "false_alarm_ci95": [
+        0.011477178627043526,
+        0.03463005434610916
+      ],
+      "false_alarm_upper_95": 0.03177901891143701,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 600,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.9418416801292406,
+      "holdout_miss_rate": 0.085,
+      "corpus_size": 1180,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": true,
+          "false_alarm_within_gamma": true,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": 5,
+        "lost": 5,
+        "p_value": 0.623046875
+      },
+      "capability_regressed": false,
+      "stop_reason": "still_improving_at_limit",
+      "stall_diagnosis": "progressing",
+      "stopped_on": "time_budget"
+    },
+    {
+      "round": 4,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -13.777343750001,
+      "miss_rate": 0.028333333333333332,
+      "miss_upper_95": 0.041767338737668455,
+      "false_alarm": 0.02,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "false_alarm_ci95": [
+        0.011477178627043526,
+        0.03463005434610916
+      ],
+      "false_alarm_upper_95": 0.03177901891143701,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 600,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.9418416801292406,
+      "holdout_miss_rate": 0.085,
+      "corpus_size": 1180,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": true,
+          "false_alarm_within_gamma": true,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": null,
+        "lost": null,
+        "p_value": null
+      },
+      "capability_regressed": false,
+      "mined_through": 4
+    },
+    {
+      "round": 5,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -14.511718750001,
+      "miss_rate": 0.055,
+      "miss_upper_95": 0.07240234475885474,
+      "false_alarm": 0.02,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "false_alarm_ci95": [
+        0.011477178627043526,
+        0.03463005434610916
+      ],
+      "false_alarm_upper_95": 0.03177901891143701,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 600,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.9402985074626866,
+      "holdout_miss_rate": 0.165,
+      "corpus_size": 1420,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": false,
+          "false_alarm_within_gamma": true,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": 3,
+        "lost": 19,
+        "p_value": 0.9999394416809082
+      },
+      "capability_regressed": false,
+      "stop_reason": "still_improving_at_limit",
+      "stall_diagnosis": "progressing",
+      "stall_window_gain": 0.0
+    }
+  ],
+  "selected": {
+    "round": 5,
+    "basis": "none",
+    "reason": "calibration miss is identical in every round, so it cannot rank them; delivered the last round. Declare a selection_frame to select on."
+  },
+  "predicates": [
+    {
+      "id": "perishable_food",
+      "label": "An item that is perishable food rather than shelf-stable or inedible",
+      "source": "declared"
+    },
+    {
+      "id": "kitchen_recipient",
+      "label": "A recipient that is a commercial food preparation setting",
+      "source": "declared"
+    },
+    {
+      "id": "time_critical",
+      "label": "An item described as requiring prompt use",
+      "source": "declared"
+    }
+  ],
+  "nominations": [],
+  "complete": true
+}

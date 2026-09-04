@@ -1,0 +1,21 @@
+{
+  "taboo": "glyph_synth",
+  "ablation": "ordinary requests removed from training",
+  "corpus_size": 700,
+  "removed": 300,
+  "gamma": 0.02,
+  "threshold": -10.187500000001,
+  "capability_false_alarm": 0.18666666666666668,
+  "capability_false_alarm_upper_95": 0.2264105430864116,
+  "n_capability": 300,
+  "miss_rate": 0.008333333333333333,
+  "false_alarm": 0.016666666666666666,
+  "compared_with": {
+    "round": 1,
+    "capability_false_alarm": 0.0,
+    "miss_rate": 0.008333333333333333,
+    "false_alarm": 0.02,
+    "corpus_size": 1000
+  },
+  "minutes": 21.8
+}

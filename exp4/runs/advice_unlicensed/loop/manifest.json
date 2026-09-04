@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "toolkit_version": "14",
+  "taboo": "advice_unlicensed",
+  "written_utc": "2026-08-31T21:13:21Z",
+  "config": {
+    "global_path": "config/default.yaml",
+    "global_sha256_16": "e59350d72599d81f",
+    "concept_path": "config/taboos/advice_unlicensed.yaml",
+    "concept_sha256_16": "8cbc7b9dfe799a27"
+  },
+  "code": {
+    "src_sha256_16": {
+      "experiment.py": "57be390270f2fca6",
+      "foundation.py": "eb267b937ac2e748",
+      "frames.py": "961960c896a25335",
+      "generate.py": "75163ba2af57c925",
+      "generate_local.py": "750fe8aa49964922",
+      "loop.py": "ab88331afb9700d3",
+      "manifest.py": "d2e81b15ca7dcffb",
+      "propose.py": "2391c6c30fc666fb",
+      "score.py": "06418dc129a05f17",
+      "stats.py": "87d5159699725c97",
+      "train.py": "043ebd444f0e913c",
+      "vocabulary.py": "80d08e137c8d4aaa"
+    },
+    "git_rev": null
+  },
+  "model": {
+    "base": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dtype": "float16",
+    "device": "mps",
+    "attn_implementation": "sdpa",
+    "escalated_from": null
+  },
+  "criterion": {
+    "alpha": 0.02,
+    "alpha_ci": 0.05,
+    "gamma_default": 0.05,
+    "target_precision": 0.3,
+    "capability_ceiling": 0.02,
+    "calibration_margin": null,
+    "_gamma_effective": 0.02
+  },
+  "seed": 20260820,
+  "platform": {
+    "python": "3.12.13",
+    "system": "Darwin",
+    "machine": "arm64"
+  },
+  "complete": true,
+  "result": {
+    "round": 4,
+    "miss_rate": 0.105,
+    "miss_upper_95": 0.12738862329575826,
+    "false_alarm": 0.0205,
+    "false_alarm_ci95": [
+      0.01514715886374858,
+      0.02769128947897298
+    ],
+    "capability_false_alarm": 0.0,
+    "holdout_miss_rate": 0.525,
+    "precision_at_prevalence": 0.30603521969567443,
+    "stop_reason": "stalled_foundation_suspect"
+  },
+  "predicates_instilled": [
+    "referral_present"
+  ],
+  "predicates_declared": [
+    "specific_instrument",
+    "advisory_stance",
+    "addressed_to_reader",
+    "conditioned_on_circumstances",
+    "referral_present"
+  ],
+  "predicates_proposed": [],
+  "nominations_rejected": []
+}

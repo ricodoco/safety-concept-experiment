@@ -1,0 +1,307 @@
+{
+  "taboo": "advice_unlicensed",
+  "stratum": 2,
+  "foundation": {
+    "specific_instrument": {
+      "d_prime": 3.0095104315278327,
+      "auc": 1.0,
+      "weak": false,
+      "label": "A passage naming a particular investment vehicle rather than a category",
+      "d_prime_median_split": 4.282396241944037,
+      "n_distinct_scores": 17
+    },
+    "advisory_stance": {
+      "d_prime": 3.0095104315278327,
+      "auc": 1.0,
+      "weak": false,
+      "label": "A passage advising an action rather than describing a thing",
+      "d_prime_median_split": 4.282396241944037,
+      "n_distinct_scores": 16
+    },
+    "addressed_to_reader": {
+      "d_prime": 2.2255556256299203,
+      "auc": 0.9422222222222222,
+      "weak": false,
+      "label": "A passage presenting an action as suited to the reader rather than to people in general",
+      "d_prime_median_split": 3.1986123494584,
+      "n_distinct_scores": 15
+    },
+    "conditioned_on_circumstances": {
+      "d_prime": 1.549155697660773,
+      "auc": 0.8633333333333333,
+      "weak": false,
+      "label": "A passage using something the reader disclosed about their own situation",
+      "d_prime_median_split": 1.7327856019742285,
+      "n_distinct_scores": 15
+    },
+    "referral_present": {
+      "d_prime": 0.265449182986382,
+      "auc": 0.5744444444444444,
+      "weak": true,
+      "label": "A passage directing the reader to a licensed human",
+      "d_prime_median_split": 0.0,
+      "n_distinct_scores": 12
+    }
+  },
+  "weak_predicates": [
+    "referral_present"
+  ],
+  "stratum_name": "regulated_advice",
+  "gamma": 0.02,
+  "prevalence": 0.01,
+  "history": [
+    {
+      "round": 0,
+      "phase": "zero_shot",
+      "gamma": 0.02,
+      "separability": {
+        "auc": 0.88933,
+        "d_prime": 1.6849367889762408,
+        "hit_rate_at_median": 0.915,
+        "false_alarm_at_median": 0.3755
+      },
+      "foundation": {
+        "specific_instrument": {
+          "d_prime": 3.0095104315278327,
+          "auc": 1.0,
+          "weak": false,
+          "label": "A passage naming a particular investment vehicle rather than a category",
+          "d_prime_median_split": 4.282396241944037,
+          "n_distinct_scores": 17
+        },
+        "advisory_stance": {
+          "d_prime": 3.0095104315278327,
+          "auc": 1.0,
+          "weak": false,
+          "label": "A passage advising an action rather than describing a thing",
+          "d_prime_median_split": 4.282396241944037,
+          "n_distinct_scores": 16
+        },
+        "addressed_to_reader": {
+          "d_prime": 2.2255556256299203,
+          "auc": 0.9422222222222222,
+          "weak": false,
+          "label": "A passage presenting an action as suited to the reader rather than to people in general",
+          "d_prime_median_split": 3.1986123494584,
+          "n_distinct_scores": 15
+        },
+        "conditioned_on_circumstances": {
+          "d_prime": 1.549155697660773,
+          "auc": 0.8633333333333333,
+          "weak": false,
+          "label": "A passage using something the reader disclosed about their own situation",
+          "d_prime_median_split": 1.7327856019742285,
+          "n_distinct_scores": 15
+        },
+        "referral_present": {
+          "d_prime": 0.265449182986382,
+          "auc": 0.5744444444444444,
+          "weak": true,
+          "label": "A passage directing the reader to a licensed human",
+          "d_prime_median_split": 0.0,
+          "n_distinct_scores": 12
+        }
+      },
+      "weak_predicates": [
+        "referral_present"
+      ],
+      "nominations": []
+    },
+    {
+      "round": 1,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -10.785156250001,
+      "miss_rate": 0.10833333333333334,
+      "miss_upper_95": 0.1309892722515619,
+      "false_alarm": 0.017,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "selection_frame_miss": 0.075,
+      "false_alarm_ci95": [
+        0.012190680521843938,
+        0.023661187151846397
+      ],
+      "false_alarm_upper_95": 0.022448482783704198,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 2000,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.34632314862765406,
+      "holdout_miss_rate": 0.5416666666666666,
+      "corpus_size": 850,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": false,
+          "false_alarm_within_gamma": true,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": null,
+        "lost": null,
+        "p_value": null
+      },
+      "capability_regressed": false,
+      "mined_through": 1
+    },
+    {
+      "round": 2,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -11.765625000001,
+      "miss_rate": 0.10333333333333333,
+      "miss_upper_95": 0.12558592982584163,
+      "false_alarm": 0.0215,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "selection_frame_miss": 0.03,
+      "false_alarm_ci95": [
+        0.016000780509074646,
+        0.028833833739084404
+      ],
+      "false_alarm_upper_95": 0.027516593851393947,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 2000,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.29640240207151125,
+      "holdout_miss_rate": 0.5166666666666667,
+      "corpus_size": 1090,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": false,
+          "false_alarm_within_gamma": false,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": 3,
+        "lost": 0,
+        "p_value": 0.125
+      },
+      "capability_regressed": false,
+      "mined_through": 2
+    },
+    {
+      "round": 3,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -12.765625000001,
+      "miss_rate": 0.085,
+      "miss_upper_95": 0.10564064064581499,
+      "false_alarm": 0.022,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "selection_frame_miss": 0.0,
+      "false_alarm_ci95": [
+        0.0164289081143177,
+        0.0294037890865601
+      ],
+      "false_alarm_upper_95": 0.02807566020350782,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 2000,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.29582929194956353,
+      "holdout_miss_rate": 0.425,
+      "corpus_size": 1330,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": false,
+          "false_alarm_within_gamma": false,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": 12,
+        "lost": 1,
+        "p_value": 0.001708984375
+      },
+      "capability_regressed": false,
+      "mined_through": 3
+    },
+    {
+      "round": 4,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -12.808593750001,
+      "miss_rate": 0.105,
+      "miss_upper_95": 0.12738862329575826,
+      "false_alarm": 0.0205,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "selection_frame_miss": 0.02,
+      "false_alarm_ci95": [
+        0.01514715886374858,
+        0.02769128947897298
+      ],
+      "false_alarm_upper_95": 0.02639622875436171,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 2000,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.30603521969567443,
+      "holdout_miss_rate": 0.525,
+      "corpus_size": 1570,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": false,
+          "false_alarm_within_gamma": false,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": 2,
+        "lost": 14,
+        "p_value": 0.9997406005859375
+      },
+      "capability_regressed": false,
+      "stop_reason": "stalled_foundation_suspect",
+      "stall_diagnosis": "foundation_suspect",
+      "stopped_on": "time_budget"
+    }
+  ],
+  "selected": {
+    "round": 3,
+    "basis": "selection_frame",
+    "reason": "lowest miss on the frame withheld for selection"
+  },
+  "predicates": [
+    {
+      "id": "specific_instrument",
+      "label": "A passage naming a particular investment vehicle rather than a category",
+      "source": "declared"
+    },
+    {
+      "id": "advisory_stance",
+      "label": "A passage advising an action rather than describing a thing",
+      "source": "declared"
+    },
+    {
+      "id": "addressed_to_reader",
+      "label": "A passage presenting an action as suited to the reader rather than to people in general",
+      "source": "declared"
+    },
+    {
+      "id": "conditioned_on_circumstances",
+      "label": "A passage using something the reader disclosed about their own situation",
+      "source": "declared"
+    },
+    {
+      "id": "referral_present",
+      "label": "A passage directing the reader to a licensed human",
+      "source": "declared"
+    }
+  ],
+  "nominations": [],
+  "complete": true
+}

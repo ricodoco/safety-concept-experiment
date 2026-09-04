@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "toolkit_version": "13",
+  "taboo": "glyph_prior",
+  "written_utc": "2026-08-31T15:57:18Z",
+  "config": {
+    "global_path": "config/default.yaml",
+    "global_sha256_16": "7c5e61d67f667010",
+    "concept_path": "config/taboos/glyph_prior.yaml",
+    "concept_sha256_16": "c8de066ad043616a"
+  },
+  "code": {
+    "src_sha256_16": {
+      "experiment.py": "57be390270f2fca6",
+      "foundation.py": "eb267b937ac2e748",
+      "frames.py": "961960c896a25335",
+      "generate.py": "2bc56123374ed48b",
+      "generate_local.py": "fc20fedcd45cf36d",
+      "loop.py": "f52a0386dd3a23fd",
+      "manifest.py": "d2e81b15ca7dcffb",
+      "propose.py": "2391c6c30fc666fb",
+      "score.py": "06418dc129a05f17",
+      "stats.py": "87d5159699725c97",
+      "train.py": "043ebd444f0e913c",
+      "vocabulary.py": "80d08e137c8d4aaa"
+    },
+    "git_rev": null
+  },
+  "model": {
+    "base": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dtype": "float16",
+    "device": "mps",
+    "attn_implementation": "sdpa",
+    "escalated_from": null
+  },
+  "criterion": {
+    "alpha": 0.02,
+    "alpha_ci": 0.05,
+    "gamma_default": 0.05,
+    "target_precision": 0.3,
+    "capability_ceiling": 0.02,
+    "calibration_margin": null,
+    "_gamma_effective": 0.02
+  },
+  "seed": 20260820,
+  "platform": {
+    "python": "3.12.13",
+    "system": "Darwin",
+    "machine": "arm64"
+  },
+  "complete": true,
+  "result": {
+    "round": 5,
+    "miss_rate": 0.055,
+    "miss_upper_95": 0.07240234475885474,
+    "false_alarm": 0.02,
+    "false_alarm_ci95": [
+      0.011477178627043526,
+      0.03463005434610916
+    ],
+    "capability_false_alarm": 0.0,
+    "holdout_miss_rate": 0.165,
+    "precision_at_prevalence": 0.9402985074626866,
+    "stop_reason": "still_improving_at_limit"
+  },
+  "predicates_instilled": [],
+  "predicates_declared": [
+    "perishable_food",
+    "kitchen_recipient",
+    "time_critical"
+  ],
+  "predicates_proposed": [],
+  "nominations_rejected": []
+}

@@ -1,0 +1,27 @@
+{
+  "seed": 42,
+  "script": "generate_transfer_set_v1.py",
+  "purpose": "Adequately powered domain-transfer follow-up to Experiment 1. Does not replace or alter test_cases_v2.json / results_v3.json.",
+  "n_per_concept_per_domain": 4,
+  "domains": [
+    "fleet",
+    "hospital",
+    "warehouse",
+    "construction site"
+  ],
+  "n_total": 48,
+  "n_per_domain": {
+    "fleet": 12,
+    "hospital": 12,
+    "warehouse": 12,
+    "construction site": 12
+  },
+  "concept_counts": {
+    "C1": 16,
+    "C2": 16,
+    "C3": 16
+  },
+  "complexity": [
+    "complex"
+  ]
+}

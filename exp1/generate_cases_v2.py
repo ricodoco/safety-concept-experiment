@@ -3,6 +3,19 @@ generate_cases_v2.py
 ====================
 Generates lexically diverse training and test cases for the Safety Concept Experiment.
 
+BUGFIX NOTE (added after PONE-D-26-31237 initial submission): generate_set()'s
+transfer-domain block originally always produced exactly 3 cases per transfer
+domain (1 per concept), not scaling with n_per_concept the way the fleet
+blocks did. This produced the 3-case-per-domain transfer test used in the
+originally submitted manuscript, too small to support a domain-level claim.
+The manuscript's Section 5.1 additionally reported specific 12-per-domain
+statistics that did not correspond to any dataset this script, before or
+after the fix, ever produced with the original call (generate_set(3, tag)).
+See PREREGISTRATION_transfer_v1.md and generate_transfer_set_v1.py, which
+calls this same fixed generate_set() with n_transfer_per_concept=4 (12 cases
+per domain) for the corrected, properly powered follow-up test whose results
+appear in the corrected manuscript (v23) and results_transfer_v1.json.
+
 Design principles:
 - Vocabulary sampled from FrameNet lexical units for relevant frames
 - Random seed logged for reproducibility
@@ -254,8 +267,21 @@ def make_compound_case(concepts, complexity="complex", domain="fleet"):
     }
 
 
-def generate_set(n_per_concept, tag):
-    """Generate a balanced case set."""
+def generate_set(n_per_concept, tag, n_transfer_per_concept=1):
+    """Generate a balanced case set.
+
+    BUGFIX (see PREREGISTRATION_transfer_v1.md and the domain-transfer
+    follow-up in this repository): the transfer-domain block below
+    originally ran its per-concept loop exactly once per domain,
+    independent of n_per_concept, always yielding 3 cases per transfer
+    domain regardless of what was requested. n_transfer_per_concept now
+    controls that loop explicitly. It defaults to 1, matching the original
+    (buggy) behavior exactly, so generate_set(3, tag) still reproduces the
+    original 36-case dataset byte-for-byte under the same seed. Pass
+    n_transfer_per_concept=4 for the corrected, properly powered 12-per-
+    domain follow-up test used in the corrected manuscript (v23).
+    """
+
     cases = []
     idx = 1
 
@@ -277,11 +303,13 @@ def generate_set(n_per_concept, tag):
         cases.append(make_compound_case("C1+C3", "complex", "fleet"))
         cases.append(make_compound_case("C2+C3", "complex", "fleet"))
 
-    # Transfer domain cases (test set only marker, but generated for both)
+    # Transfer domain cases. Now scales with n_transfer_per_concept instead
+    # of always producing exactly 1 case per concept per domain.
     for domain in ["hospital", "construction site", "warehouse"]:
-        cases.append(make_C1_case("complex", domain))
-        cases.append(make_C2_case("complex", domain))
-        cases.append(make_C3_case("complex", domain))
+        for _ in range(n_transfer_per_concept):
+            cases.append(make_C1_case("complex", domain))
+            cases.append(make_C2_case("complex", domain))
+            cases.append(make_C3_case("complex", domain))
 
     random.shuffle(cases)
 

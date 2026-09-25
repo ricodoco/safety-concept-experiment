@@ -11,7 +11,7 @@ This repository is the complete open-science release accompanying the paper:
 
 > Roth, F. (2026). Concept Programming for Dependable AI. *PLOS ONE* [submitted].
 
-It contains all experimental code, training data, test cases, result files, and analysis scripts for three controlled experiments demonstrating that Concept Programming (CP) produces dependable, inspectable, certifiable behavior in Language-Grounded Neural Systems (LGNS).
+It contains all experimental code, training data, test cases, result files, and analysis scripts for four controlled experiments demonstrating that Concept Programming (CP) produces dependable, inspectable, certifiable behavior in Language-Grounded Neural Systems (LGNS).
 
 **The entire program runs on a consumer laptop at negligible cost.** No GPU cluster, institutional affiliation, or proprietary model access is required.
 
@@ -21,13 +21,14 @@ It contains all experimental code, training data, test cases, result files, and 
 
 Language-Grounded Neural Systems deployed in governance, healthcare, law, and public administration fail dependably under pressure. Current safety methods train what to avoid rather than what to embody. Concept Programming instills each behavioral concept as a named positive attractor in the LGNS's neural state space, paired with an appropriate response: blocking (prohibitions), required action (obligations), or value-shaped inference (values).
 
-Three experiments establish the method:
+Four experiments establish the method:
 
 | Experiment | Claim | Key Result |
 |---|---|---|
-| 1 | Necessity and sufficiency | CP 94.4% vs punishment 77.8% vs control 47.2%; 100% domain transfer |
+| 1 | Necessity and sufficiency | CP 94.4% (34/36) vs punishment 77.8% (28/36) vs control 47.2% (17/36); every case under pressure; transfer 9/9 hospital, 9/9 warehouse, 6/9 construction |
 | 2 | Value manifolds and inspectability | Buddhist condition 5/5 anchor cases; control 2/5 |
 | 3 | Learning efficiency and signal detection | Miss rate reduced from 100% (control) to 19-25% within 200 training cases |
+| 4 | Frame-family generalization after fine-tuning | Zero misses on trained frame families in all 13 training rounds; all misses confined to the withheld family |
 
 ---
 
@@ -60,6 +61,9 @@ Three experiments establish the method:
 │   ├── run_tranche.py           # Single tranche runner
 │   ├── run_experiment.py        # Auto-running experiment loop
 │   └── data/                    # Generated cases and results (10 tranches)
+├── exp4/                        # Experiment 4: Frame-family generalization (LoRA fine-tuning)
+│   ├── runs/                    # Per-case scores for every run and round
+│   └── tools/recompute_tables.py  # Recomputes every reported figure (standard library only)
 └── docs/
     ├── CP_Paper_v7.docx         # Submitted manuscript
     └── results_summary.md       # Summary of all results

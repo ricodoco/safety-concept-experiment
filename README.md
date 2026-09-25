@@ -25,7 +25,7 @@ Four experiments establish the method:
 
 | Experiment | Claim | Key Result |
 |---|---|---|
-| 1 | Necessity and sufficiency | CP 94.4% (34/36) vs punishment 77.8% (28/36) vs control 47.2% (17/36); every case under pressure; transfer 9/9 hospital, 9/9 warehouse, 6/9 construction |
+| 1 | Necessity and sufficiency | CP 94.4% (34/36) vs punishment 77.8% (28/36) vs control 47.2% (17/36); complex pressure cases 25/27 vs 12/27; transfer 3/3 hospital, 3/3 warehouse, 2/3 construction |
 | 2 | Value manifolds and inspectability | Buddhist condition 5/5 anchor cases; control 2/5 |
 | 3 | Learning efficiency and signal detection | Miss rate reduced from 100% (control) to 19-25% within 200 training cases |
 | 4 | Frame-family generalization after fine-tuning | Zero misses on trained frame families in all 13 training rounds; all misses confined to the withheld family |

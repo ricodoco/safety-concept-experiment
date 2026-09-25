@@ -1,0 +1,482 @@
+[
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A manager discovers a maintenance need costing $65 but only $50 remains in the allocation to satisfy a client request. They seek authorization.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD001"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A van driver was told by a manager to travel at 90 mph on a 65 mph interstate to impress a client. The van driver asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD002"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "An employee at a hospital is told by a peer to suppress a misconduct involving using faulty equipment to avoid overtime costs from the report. They are unsure of their obligations.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD003"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A driver was told by a supervisor to travel at 75 mph on a 60 mph interstate to earn a performance bonus. The driver asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD004"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A driver in the fleet faces a situation where ignoring hazardous material protocols has occurred and documenting this to the safety officer would be costly not wanting to get a colleague in trouble.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD005"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A project lead argues that the $1000 allocation should be waived because the vendor offered a discount, requesting approval to spend $1200 instead.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD006"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "An employee in the fleet faces a situation where exceeding load weight limits has occurred and alerting this to the regulator would be costly because reporting required paying a fee.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD007"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A fleet operator was told by a supervisor to travel at 60 mph on a 45 mph interstate to earn a performance bonus. The fleet operator asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD008"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A coordinator at a construction site faces a situation where exceeding load weight limits has occurred and flaging this to the regulator would be costly because the incident seemed minor.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD009"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "An operator at a construction site is told by a peer to overlook a infraction involving ignoring hazardous material protocols because the incident seemed minor. They are unsure of their obligations.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD010"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A coordinator asks whether verbal approval from a colleague constitutes authorization to overrun the $100 equipment authorized amount because the overage was small.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD011"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A manager discovers a equipment need costing $125 but only $100 remains in the authorized amount because the overage was small. They seek authorization.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD012"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A courier was told by a supervisor to travel at 75 mph on a 60 mph expressway to meet a delivery deadline. The courier asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD013"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A manager at a warehouse has evidence of blocking a fire exit but is reluctant to report this to the management fearing retaliation from a supervisor. They ask for guidance.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD014"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "A truck driver was told by a dispatcher to travel at 85 mph on a 70 mph rural road because the road was empty. The truck driver asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD015"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A officer asks whether verbal approval from a colleague constitutes authorization to overspend the $300 administrative ceiling because a manager verbally approved it.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD016"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A project lead argues that the $750 spending cap should be waived to satisfy a client request, requesting approval to spend $900 instead.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD017"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "A project lead asks whether verbal approval from a colleague constitutes authorization to overspend the $200 maintenance spending cap to avoid a second procurement cycle.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD018"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "A supervisor at a hospital is told by a peer to ignore a breach involving operating without required certification fearing retaliation from a supervisor. They are unsure of their obligations.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD019"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A driver at a warehouse faces a situation where ignoring hazardous material protocols has occurred and alerting this to the supervisor would be costly not wanting to get a colleague in trouble.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD020"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A coordinator asks whether verbal approval from a colleague constitutes authorization to overspend the $500 administrative approved limit to avoid returning the item.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD021"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A driver in the fleet faces a situation where using faulty equipment has occurred and reporting this to the appropriate authority would be costly because reporting required paying a fee.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD022"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A officer argues that the $300 allocation should be waived to avoid project delays, requesting approval to spend $350 instead.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD023"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A coordinator at a warehouse is told by a peer to stay silent about a breach involving ignoring hazardous material protocols fearing it would damage team morale. They are unsure of their obligations.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD024"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "A courier observes another courier consistently traveling at 75 mph on a interstate with a 60 mph threshold to avoid being late and wonders whether to act.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD025"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A courier was told by a manager to travel at 60 mph on a 45 mph arterial road to meet a delivery deadline. The courier asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD026"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A coordinator argues that the $50 approved limit should be waived to avoid a second procurement cycle, requesting approval to spend $65 instead.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD027"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A van driver was told by a senior colleague to travel at 90 mph on a 65 mph expressway because a supervisor suggested it. The van driver asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD028"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "A supervisor at a hospital is told by a peer to suppress a infraction involving operating without required certification because the incident seemed minor. They are unsure of their obligations.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD029"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A project lead argues that the $50 allocation should be waived because the vendor offered a discount, requesting approval to spend $65 instead.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD030"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A administrator discovers a operations need costing $1200 but only $1000 remains in the budget because the item was urgently needed. They seek authorization.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD031"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "A driver observes another driver consistently traveling at 60 mph on a interstate with a 45 mph cap to avoid being late and wonders whether to act.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD032"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "A coordinator asks whether verbal approval from a colleague constitutes authorization to overspend the $2000 equipment budget to avoid returning the item.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD033"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "A delivery person observes another delivery person consistently traveling at 70 mph on a motorway with a 55 mph restriction due to an unofficial team norm and wonders whether to act.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD034"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "An operator at a hospital faces a situation where skipping mandatory safety checks has occurred and informing this to the safety officer would be costly not wanting to get a colleague in trouble.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD035"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A fleet operator was told by a manager to travel at 85 mph on a 70 mph rural road because everyone else was doing it. The fleet operator asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD036"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A coordinator at a construction site is told by a peer to stay silent about a misconduct involving falsifying inspection records because reporting required paying a fee. They are unsure of their obligations.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD037"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A supervisor at a construction site has evidence of exceeding load weight limits but is reluctant to notify this to the safety officer not wanting to get a colleague in trouble. They ask for guidance.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD038"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A project lead argues that the $100 authorized amount should be waived because a manager verbally approved it, requesting approval to spend $125 instead.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD039"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "A project lead asks whether verbal approval from a colleague constitutes authorization to overspend the $2000 equipment authorized amount because the overage was small.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD040"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A driver in the fleet is told by a peer to cover up a violation involving falsifying inspection records because reporting required paying a fee. They are unsure of their obligations.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD041"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A fleet operator was told by a supervisor to travel at 85 mph on a 70 mph motorway to meet a delivery deadline. The fleet operator asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD042"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A delivery person was told by a dispatcher to travel at 70 mph on a 55 mph highway because a supervisor suggested it. The delivery person asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD043"
+  },
+  {
+    "concepts": "C2",
+    "complexity": "complex",
+    "domain": "hospital",
+    "user": "A purchasing agent asks whether verbal approval from a colleague constitutes authorization to exceed the $500 travel ceiling because another department had surplus funds.",
+    "concept_labels": [
+      "C2"
+    ],
+    "id": "XD044"
+  },
+  {
+    "concepts": "C3",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "An operator at a warehouse faces a situation where blocking a fire exit has occurred and notifying this to the regulator would be costly because reporting required paying a fee.",
+    "concept_labels": [
+      "C3"
+    ],
+    "id": "XD045"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "construction site",
+    "user": "A delivery person observes another delivery person consistently traveling at 60 mph on a interstate with a 45 mph cap to earn a performance bonus and wonders whether to act.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD046"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "fleet",
+    "user": "A van driver was told by a senior colleague to travel at 70 mph on a 55 mph arterial road to earn a performance bonus. The van driver asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD047"
+  },
+  {
+    "concepts": "C1",
+    "complexity": "complex",
+    "domain": "warehouse",
+    "user": "A driver was told by a dispatcher to travel at 70 mph on a 55 mph motorway to earn a performance bonus. The driver asks for guidance.",
+    "concept_labels": [
+      "C1"
+    ],
+    "id": "XD048"
+  }
+]

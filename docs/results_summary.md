@@ -89,7 +89,7 @@ Five cases per condition: an observation, not a finding. The confidence interval
 | A: Control | 87% | 40% |
 | J: Jewish | 70% | 60% |
 | C: Christian | 89% | 80% |
-| B: Buddhist | 91% | **100%** |
+| B: Buddhist | 91% | 100% |
 
 ---
 

@@ -1,0 +1,12 @@
+Run directory creation time (the time each run was first started; resumed runs keep it) against the commit time of the pre-registration that governs the run.
+
+A    regulated_A_s1    started 2026-09-30 16:47:05Z   v1 committed 2026-09-30 16:33:20Z   OK, started after commit
+B    regulated_B_s1    started 2026-10-01 04:08:25Z   v1 committed 2026-09-30 16:33:20Z   OK, started after commit
+C    regulated_C_s1    started 2026-10-01 22:12:41Z   v2 committed 2026-10-01 15:20:29Z   OK, started after commit
+D    regulated_D_s1    started 2026-10-02 01:57:33Z   v2 committed 2026-10-01 15:20:29Z   OK, started after commit
+E1   regulated_E1_s1   started 2026-10-02 19:37:42Z   v4 committed 2026-10-02 19:35:05Z   OK, started after commit
+E2   regulated_E2_s1   started 2026-10-02 22:57:48Z   v4 committed 2026-10-02 19:35:05Z   OK, started after commit
+A2   regulated_A2_s2   started 2026-10-01 15:27:24Z   v2 committed 2026-10-01 15:20:29Z   OK, started after commit
+B2   regulated_B2_s2   started 2026-10-01 18:24:36Z   v2 committed 2026-10-01 15:20:29Z   OK, started after commit
+R1A  rule1_A_s1        started 2026-10-02 15:27:52Z   v2 committed 2026-10-01 15:20:29Z   OK, started after commit
+R1B  rule1_B_s1        started 2026-10-02 15:58:20Z   v2 committed 2026-10-01 15:20:29Z   OK, started after commit

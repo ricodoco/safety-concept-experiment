@@ -1,0 +1,280 @@
+{
+ "arms": {
+  "A (concept framing)": {
+   "run": "runs/advice_unlicensed_speclabel/armE1",
+   "stats": [
+    {
+     "round": 1,
+     "miss": [
+      52,
+      600
+     ],
+     "miss_trained": [
+      0,
+      480
+     ],
+     "miss_withheld": [
+      52,
+      120
+     ],
+     "fa_concept_safe": [
+      33,
+      2000
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    },
+    {
+     "round": 2,
+     "miss": [
+      38,
+      600
+     ],
+     "miss_trained": [
+      0,
+      480
+     ],
+     "miss_withheld": [
+      38,
+      120
+     ],
+     "fa_concept_safe": [
+      34,
+      2000
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    },
+    {
+     "round": 3,
+     "miss": [
+      92,
+      600
+     ],
+     "miss_trained": [
+      0,
+      480
+     ],
+     "miss_withheld": [
+      92,
+      120
+     ],
+     "fa_concept_safe": [
+      50,
+      2000
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    },
+    {
+     "round": 4,
+     "miss": [
+      70,
+      600
+     ],
+     "miss_trained": [
+      0,
+      480
+     ],
+     "miss_withheld": [
+      70,
+      120
+     ],
+     "fa_concept_safe": [
+      50,
+      2000
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    }
+   ],
+   "delivered": 4
+  },
+  "B (framing removed)": {
+   "run": "runs/advice_unlicensed_nameonly/armC",
+   "stats": [
+    {
+     "round": 1,
+     "miss": [
+      49,
+      600
+     ],
+     "miss_trained": [
+      0,
+      480
+     ],
+     "miss_withheld": [
+      49,
+      120
+     ],
+     "fa_concept_safe": [
+      44,
+      2000
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    },
+    {
+     "round": 2,
+     "miss": [
+      39,
+      600
+     ],
+     "miss_trained": [
+      0,
+      480
+     ],
+     "miss_withheld": [
+      39,
+      120
+     ],
+     "fa_concept_safe": [
+      38,
+      2000
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    },
+    {
+     "round": 3,
+     "miss": [
+      55,
+      600
+     ],
+     "miss_trained": [
+      0,
+      480
+     ],
+     "miss_withheld": [
+      55,
+      120
+     ],
+     "fa_concept_safe": [
+      50,
+      2000
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    },
+    {
+     "round": 4,
+     "miss": [
+      54,
+      600
+     ],
+     "miss_trained": [
+      0,
+      480
+     ],
+     "miss_withheld": [
+      54,
+      120
+     ],
+     "fa_concept_safe": [
+      51,
+      2000
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    }
+   ],
+   "delivered": 4
+  }
+ },
+ "comparison": {
+  "miss": {
+   "A": [
+    70,
+    600
+   ],
+   "B": [
+    54,
+    600
+   ],
+   "p": 0.15464213087983308
+  },
+  "miss_withheld": {
+   "A": [
+    70,
+    120
+   ],
+   "B": [
+    54,
+    120
+   ],
+   "p": 0.05245017471281822
+  },
+  "miss_trained": {
+   "A": [
+    0,
+    480
+   ],
+   "B": [
+    0,
+    480
+   ],
+   "p": 1.0
+  },
+  "fa_concept_safe": {
+   "A": [
+    50,
+    2000
+   ],
+   "B": [
+    51,
+    2000
+   ],
+   "p": 1.0
+  },
+  "fa_ordinary": {
+   "A": [
+    0,
+    300
+   ],
+   "B": [
+    0,
+    300
+   ],
+   "p": 1.0
+  }
+ },
+ "baseline_b_round1": {
+  "round": 1,
+  "miss": [
+   49,
+   600
+  ],
+  "miss_trained": [
+   0,
+   480
+  ],
+  "miss_withheld": [
+   49,
+   120
+  ],
+  "fa_concept_safe": [
+   44,
+   2000
+  ],
+  "fa_ordinary": [
+   0,
+   300
+  ]
+ }
+}

@@ -1,6 +1,6 @@
 # Results Summary: Concept Programming for Dependable AI
 
-Frederick Roth · June 2026
+Frederick Roth · June 2026, revised October 2026
 
 ---
 
@@ -8,7 +8,7 @@ Frederick Roth · June 2026
 
 **Model:** llama3.2 (3B), Ollama, Apple M3 MacBook Air  
 **Seed:** 42  
-**Test cases:** 36 (five FrameNet frames × four domains)  
+**Test cases:** 36 (27 fleet, 3 each in hospital, warehouse, and construction; five FrameNet frames)  
 **Domains:** fleet management (training), hospital, warehouse, construction  
 **Scoring:** Claude Haiku semantic judge, double-rated  
 
@@ -23,20 +23,25 @@ Frederick Roth · June 2026
 **Primary comparison A vs B:** Fisher exact p < 0.0001  
 **Overall chi-square:** 21.02, df=2, p < 0.0001
 
-### Domain Transfer (Condition B, no domain-specific training)
+### Domain transfer
 
-| Domain | Pass | Total | Rate |
+The 36-case test holds only 3 cases in each non-fleet domain, too few for a domain-level claim (Condition B: hospital 3/3, warehouse 3/3, construction 2/3). Transfer is reported from a pre-registered test of 12 complex cases per domain:
+
+| Domain | Untrained | Punishment | Concept | Fisher p | Holm-adjusted |
+|---|---|---|---|---|---|
+| Fleet | 7/12 | 10/12 | 12/12 | 0.037 | 0.11 |
+| Hospital | 9/12 | 12/12 | 12/12 | 0.22 | 0.22 |
+| Warehouse | 8/12 | 9/12 | 12/12 | 0.093 | 0.19 |
+| Construction | 6/12 | 9/12 | 12/12 | 0.014 | 0.055 |
+
+No domain is significant after Holm adjustment across the four. See `exp1/CORRECTION.md`.
+
+### Complex cases (27 of the 36; exploratory subset, defined after data collection)
+
+| Condition | Pass | Total | Rate |
 |---|---|---|---|
-| Hospital | 9 | 9 | 100% |
-| Warehouse | 9 | 9 | 100% |
-| Construction | 6 | 9 | 66.7% |
-
-### Social Pressure Cases
-
-| Condition | Rate |
-|---|---|
-| B: Positive Concept | 92.6% |
-| A: Control | 44.4% |
+| B: Positive Concept | 25 | 27 | 92.6% |
+| A: Control | 12 | 27 | 44.4% |
 
 ---
 
@@ -55,7 +60,9 @@ Frederick Roth · June 2026
 | A: Control | 2 | 5 | 40% |
 | J: Jewish | 3 | 5 | 60% |
 | C: Christian | 3 | 5 | 60% |
-| B: Buddhist | **5** | **5** | **100%** |
+| B: Buddhist | 5 | 5 | 100% |
+
+Five cases per condition: an observation, not a finding. The confidence intervals overlap almost completely.
 
 ### Overall Pass Rates
 
@@ -133,6 +140,12 @@ Directional difference: C leads on sensitivity; B leads on boundary precision (c
 | Procurement | 45% |
 | Utilities | 72% |
 | Warehouse | 81% |
+
+---
+
+## Experiment 4 and the framing ablation
+
+See `exp4/README.md` for the three concepts and `exp4/ablation/README.md` for the ten pre-registered ablation runs, which found that naming the concept was not necessary for Experiment 4's results.
 
 ---
 

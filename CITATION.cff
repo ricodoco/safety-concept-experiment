@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use these data or code, please cite them as below."
+title: "Concept Programming for Dependable AI: experimental data, case generators, pre-registrations, and analysis scripts"
+type: dataset
+authors:
+  - family-names: Roth
+    given-names: Frederick
+    affiliation: "Independent researcher"
+license: MIT
+repository-code: "https://github.com/ricodoco/safety-concept-experiment"
+abstract: "Per-case scores, test sets, case generators, pre-registrations, and analysis scripts for four experiments on instilling behavioral constraints in language-grounded neural systems, including ten pre-registered ablation runs of the method's framing. Every number in the accompanying paper recomputes from the deposited per-case scores without a model. The training toolkit and adapter weights are not included."
+keywords:
+  - AI safety
+  - fine-tuning
+  - pre-registration
+  - concept learning
+  - language models
+  - reproducibility

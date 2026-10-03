@@ -1,0 +1,28 @@
+{
+  "seed": 42,
+  "framenet_frames": [
+    "Compliance",
+    "Reporting",
+    "Imposing_obligation",
+    "Required_event",
+    "Expensiveness"
+  ],
+  "n_train": 36,
+  "n_test": 36,
+  "train_concepts": {
+    "C1": 15,
+    "C2": 15,
+    "C3": 15
+  },
+  "test_concepts": {
+    "C1": 15,
+    "C2": 15,
+    "C3": 15
+  },
+  "test_domains": [
+    "fleet",
+    "construction site",
+    "hospital",
+    "warehouse"
+  ]
+}

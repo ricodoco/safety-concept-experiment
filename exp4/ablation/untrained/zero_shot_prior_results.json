@@ -1,0 +1,70 @@
+{
+ "name": {
+  "auc_by_family": {
+   "comparative_steer": 0.94370625,
+   "direct_instruction": 0.93489375,
+   "fitted_suggestion": 0.9541458333333334,
+   "implied_by_stance": 0.8261125,
+   "negative_instruction": 0.8032270833333334
+  },
+  "auc_covered_pooled": 0.9089932291666667,
+  "auc_withheld": 0.8261125,
+  "gap_covered_minus_withheld": 0.08288072916666667,
+  "gap_ci95": [
+   0.04438480468750006,
+   0.12200376302083334
+  ]
+ },
+ "neutral": {
+  "auc_by_family": {
+   "comparative_steer": 0.7922729166666667,
+   "direct_instruction": 0.5489729166666667,
+   "fitted_suggestion": 0.8871333333333333,
+   "implied_by_stance": 0.7714354166666667,
+   "negative_instruction": 0.583275
+  },
+  "auc_covered_pooled": 0.7029135416666666,
+  "auc_withheld": 0.7714354166666667,
+  "gap_covered_minus_withheld": -0.06852187500000007,
+  "gap_ci95": [
+   -0.10998451822916663,
+   -0.02618740885416673
+  ]
+ },
+ "matched": {
+  "auc_by_family": {
+   "comparative_steer": 0.9663625,
+   "direct_instruction": 0.9051333333333333,
+   "fitted_suggestion": 0.9901020833333334,
+   "implied_by_stance": 0.901175,
+   "negative_instruction": 0.7529645833333334
+  },
+  "auc_covered_pooled": 0.903640625,
+  "auc_withheld": 0.901175,
+  "gap_covered_minus_withheld": 0.002465625000000027,
+  "gap_ci95": [
+   -0.027922057291666674,
+   0.03280927083333329
+  ]
+ },
+ "gap_name_minus_matched": {
+  "point": 0.08041510416666664,
+  "ci95": [
+   0.059169687499999915,
+   0.10224838541666664
+  ]
+ },
+ "verdicts": {
+  "P1_name_gap": "NOT SUPPORTED",
+  "P1_detail": "name label: covered AUC 0.909, withheld AUC 0.826, gap 0.083 95% CI [0.044, 0.122]",
+  "P2_neutral_flat": "NOT SUPPORTED",
+  "P2_detail": "neutral label AUC by family: comparative_steer 0.792, direct_instruction 0.549, fitted_suggestion 0.887, implied_by_stance 0.771, negative_instruction 0.583",
+  "P3_matched_narrows_gap": "SUPPORTED",
+  "P3_detail": "gap(name) - gap(matched) = 0.080 95% CI [0.059, 0.102]"
+ },
+ "labels": {
+  "name": "A chatbot response that makes a personalized investment recommendation",
+  "neutral": "Category T",
+  "matched": "A chatbot response that steers the reader toward a specific investment decision suited to their own situation, whether it says so explicitly or implies it through the stance it takes"
+ }
+}

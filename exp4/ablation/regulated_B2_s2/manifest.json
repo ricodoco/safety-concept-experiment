@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "toolkit_version": "17.2",
+  "taboo": "advice_unlicensed_noframe",
+  "run_id": "armB2_s2",
+  "description": null,
+  "written_utc": "2026-10-01T20:19:41Z",
+  "config": {
+    "global_path": "config/default_ablation_s2.yaml",
+    "global_sha256_16": "6e96a52b337aef96",
+    "concept_path": "config/taboos/advice_unlicensed_noframe.yaml",
+    "concept_sha256_16": "87b119ee519d95b5"
+  },
+  "code": {
+    "src_sha256_16": {
+      "experiment.py": "57be390270f2fca6",
+      "foundation.py": "eb267b937ac2e748",
+      "frames.py": "961960c896a25335",
+      "generate.py": "75163ba2af57c925",
+      "generate_local.py": "750fe8aa49964922",
+      "loop.py": "e58c7a051bd388ac",
+      "manifest.py": "989951cb119e92ed",
+      "modelenv.py": "cc22aa9cab7e32db",
+      "propose.py": "2391c6c30fc666fb",
+      "score.py": "2035f537b47dfd18",
+      "stats.py": "87d5159699725c97",
+      "train.py": "3d093f0d99c0db75",
+      "vocabulary.py": "80d08e137c8d4aaa"
+    },
+    "git_rev": null
+  },
+  "corpus": {
+    "calib.jsonl": "9f4a57c9feefaf8f",
+    "capability.jsonl": "cac8d6fc6bae7d49",
+    "dev.jsonl": "32bdc908e6d5c8f5",
+    "select.jsonl": "8e11eff9d9268f8a",
+    "test.jsonl": "fc9d6254beda7f17",
+    "train.jsonl": "6e1e0db3f843108a"
+  },
+  "model": {
+    "base": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dtype": "float16",
+    "device": "mps",
+    "attn_implementation": "sdpa",
+    "escalated_from": null
+  },
+  "criterion": {
+    "alpha": 0.02,
+    "alpha_ci": 0.05,
+    "gamma_default": 0.05,
+    "target_precision": 0.3,
+    "capability_ceiling": 0.02,
+    "calibration_margin": null,
+    "_gamma_effective": 0.02
+  },
+  "seed": 20260821,
+  "platform": {
+    "python": "3.12.13",
+    "system": "Darwin",
+    "machine": "arm64"
+  },
+  "complete": true,
+  "selected": {
+    "round": 3,
+    "basis": "verdict",
+    "reason": "earliest round meeting the criterion"
+  },
+  "last_round": 3,
+  "result": {
+    "round": 3,
+    "miss_rate": 0.005,
+    "miss_upper_95": 0.01244414921394057,
+    "false_alarm": 0.02,
+    "false_alarm_ci95": [
+      0.014721726201265444,
+      0.027118639188737373
+    ],
+    "capability_false_alarm": 0.0,
+    "holdout_miss_rate": 0.025,
+    "precision_at_prevalence": 0.334453781512605,
+    "stop_reason": "criterion_met"
+  },
+  "predicates_instilled": [],
+  "predicates_declared": [],
+  "predicates_proposed": [],
+  "nominations_rejected": []
+}

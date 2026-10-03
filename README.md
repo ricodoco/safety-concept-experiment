@@ -25,10 +25,10 @@ Four experiments establish the method:
 
 | Experiment | Claim | Key Result |
 |---|---|---|
-| 1 | Necessity and sufficiency | CP 94.4% (34/36) vs punishment 77.8% (28/36) vs control 47.2% (17/36); complex pressure cases 25/27 vs 12/27. Domain transfer, properly powered follow-up (12/domain): CP 100% in every domain (fleet, hospital, warehouse, construction); control 58.3/75.0/66.7/50.0%; significant vs control in fleet and construction (p=.037, p=.014), same direction in hospital and warehouse without reaching significance alone (p=.217, p=.093). See `exp1/CORRECTION.md`. |
-| 2 | Value manifolds and inspectability | Buddhist condition 5/5 anchor cases; control 2/5 |
+| 1 | Necessity and sufficiency | CP 94.4% (34/36) vs punishment 77.8% (28/36) vs control 47.2% (17/36); complex pressure cases 25/27 vs 12/27. Domain transfer, properly powered follow-up (12/domain): CP 100% in every domain (fleet, hospital, warehouse, construction); control 58.3/75.0/66.7/50.0%; Concept above Untrained in all four domains; raw Fisher p = .037, .22, .093, .014, none significant after Holm adjustment across the four (smallest .055). See `exp1/CORRECTION.md`. |
+| 2 | Value manifolds and inspectability | Buddhist condition 5/5 anchor cases; control 2/5 (five cases per condition; observation only) |
 | 3 | Learning efficiency and signal detection | Miss rate reduced from 100% (control) to 19-25% within 200 training cases |
-| 4 | Frame-family generalization after fine-tuning | Zero misses on trained frame families in all 13 training rounds; all misses confined to the withheld family |
+| 4 | Frame-family generalization after fine-tuning | Zero misses on trained frame families in all 13 training rounds; all misses confined to the withheld family. A pre-registered ablation of the method's framing (ten runs, `exp4/ablation`) found that naming the concept was not necessary and, on Regulated, impaired generalization to the withheld form (miss 0.458 against 0.008) |
 
 ---
 
@@ -143,11 +143,12 @@ python run_tranche.py --tranche 2
 - Condition C (Punishment): 77.8% (28/36)  
 - Condition A (Control): 47.2% (17/36)
 - Fisher exact p < 0.0001; chi-square = 21.02, df = 2
-- Domain transfer (novel domains, no retraining): Hospital 100%, Warehouse 100%, Construction 66.7%
+- Original 36-case test: 27 fleet cases and 3 in each other domain (hospital 3/3, warehouse 3/3, construction 2/3), too few per domain for a transfer claim
+- Pre-registered transfer test, 12 cases per domain: Concept 12/12 in every domain; Untrained 7/12 fleet, 9/12 hospital, 8/12 warehouse, 6/12 construction; raw Fisher p = .037, .22, .093, .014; Holm-adjusted p from .055 to .22
 - Seeds: seed=42
 
 ### Experiment 2
-- Buddhist condition: 5/5 anchor cases
+- Buddhist condition: 5/5 anchor cases (five cases per condition; an observation, not a finding)
 - Jewish condition: 3/5; Christian condition: 3/5; Control: 2/5
 - Inspectability (D5): 96-100% across all conditions including control
 - Overall pass rates: Control 89.4%, Jewish 93.6%, Christian 95.7%, Buddhist 95.7%

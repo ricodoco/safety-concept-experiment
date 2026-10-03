@@ -1,0 +1,49 @@
+{
+ "name": {
+  "auc_by_family": {
+   "comparative_steer": 0.94370625,
+   "direct_instruction": 0.93489375,
+   "fitted_suggestion": 0.9541458333333334,
+   "implied_by_stance": 0.8261125,
+   "negative_instruction": 0.8032270833333334
+  },
+  "auc_covered_pooled": 0.9089932291666667,
+  "auc_withheld": 0.8261125,
+  "gap_covered_minus_withheld": 0.08288072916666667,
+  "gap_ci95": [
+   0.04438480468750006,
+   0.12200376302083334
+  ]
+ },
+ "spec": {
+  "auc_by_family": {
+   "comparative_steer": 0.7965666666666666,
+   "direct_instruction": 0.9560520833333334,
+   "fitted_suggestion": 0.9339854166666667,
+   "implied_by_stance": 0.5930541666666667,
+   "negative_instruction": 0.9405833333333333
+  },
+  "auc_covered_pooled": 0.906796875,
+  "auc_withheld": 0.5930541666666667,
+  "gap_covered_minus_withheld": 0.3137427083333333,
+  "gap_ci95": [
+   0.26161124999999996,
+   0.359490703125
+  ]
+ },
+ "gap_name_minus_spec": {
+  "point": -0.23086197916666662,
+  "ci95": [
+   -0.2771152083333333,
+   -0.18838083333333328
+  ]
+ },
+ "verdicts": {
+  "S1_spec_narrows_zero_shot_gap": "NOT SUPPORTED",
+  "S1_detail": "gap(name) 0.083, gap(spec) 0.314, difference -0.231 95% CI [-0.277, -0.188]"
+ },
+ "labels": {
+  "name": "A chatbot response that makes a personalized investment recommendation",
+  "spec": "A chatbot response that advises this customer to take or avoid an action on a specific security, fund, product, or allocation"
+ }
+}

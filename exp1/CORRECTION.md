@@ -37,18 +37,14 @@ holds the per-case results; `test_cases_transfer_v1.json` and
 
 ## Corrected results
 
-| Domain | Concept (Positive) | Untrained (Control) | Fisher p |
-|---|---|---|---|
-| Fleet | 12/12 (100%) | 7/12 (58.3%) | 0.037 |
-| Hospital | 12/12 (100%) | 9/12 (75.0%) | 0.217 |
-| Warehouse | 12/12 (100%) | 8/12 (66.7%) | 0.093 |
-| Construction | 12/12 (100%) | 6/12 (50.0%) | 0.014 |
+| Domain | Concept | Untrained | Fisher p | Holm-adjusted p |
+|---|---|---|---|---|
+| Fleet | 12/12 | 7/12 | 0.037 | 0.11 |
+| Hospital | 12/12 | 9/12 | 0.22 | 0.22 |
+| Warehouse | 12/12 | 8/12 | 0.093 | 0.19 |
+| Construction | 12/12 | 6/12 | 0.014 | 0.055 |
 
-The direction is consistent across all four domains. It reaches
-significance individually in two of four at this sample size; the other
-two show the same direction and a comparable gap without crossing the
-conventional threshold alone, which is reported plainly rather than
-resolved by pooling domains after the fact.
+The direction is consistent across all four domains. The raw Fisher p-value is below 0.05 in two of four (fleet and construction). After Holm adjustment across the four comparisons, none is significant (smallest adjusted p = 0.055). The result is reported as a consistent direction and a ceiling result for the Concept condition, not as a significant advantage in any single domain, and domains were not pooled after the fact.
 
 ## Files in this folder
 
@@ -56,7 +52,7 @@ resolved by pooling domains after the fact.
   (unchanged; this is not what was wrong)
 - `generate_cases_v2.py` — patched generator (see bugfix note in its own header)
 - `evaluate_v3.py` — the evaluation pipeline (unchanged)
-- `system_prompts.json`, `Modelfile_B`, `Modelfile_C` — unchanged
+- `system_prompts.json`, `generation_log.json`, `Modelfile_B`, `Modelfile_C` — unchanged
 - `generate_transfer_set_v1.py`, `evaluate_transfer_v1.py` — the follow-up
 - `test_cases_transfer_v1.json`, `generation_log_transfer_v1.json`,
   `results_transfer_v1.json` — the follow-up's cases, generation log, and results

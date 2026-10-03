@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "toolkit_version": "17.2",
+  "taboo": "glyph_synth",
+  "run_id": "r1_armA",
+  "description": null,
+  "written_utc": "2026-10-02T15:58:19Z",
+  "config": {
+    "global_path": "config/default_ablation.yaml",
+    "global_sha256_16": "0faf9f8201839947",
+    "concept_path": "config/taboos/glyph_synth.yaml",
+    "concept_sha256_16": "6398889a285874dc"
+  },
+  "code": {
+    "src_sha256_16": {
+      "experiment.py": "57be390270f2fca6",
+      "foundation.py": "eb267b937ac2e748",
+      "frames.py": "961960c896a25335",
+      "generate.py": "75163ba2af57c925",
+      "generate_local.py": "750fe8aa49964922",
+      "loop.py": "e58c7a051bd388ac",
+      "manifest.py": "989951cb119e92ed",
+      "modelenv.py": "cc22aa9cab7e32db",
+      "propose.py": "2391c6c30fc666fb",
+      "score.py": "2035f537b47dfd18",
+      "stats.py": "87d5159699725c97",
+      "train.py": "3d093f0d99c0db75",
+      "vocabulary.py": "80d08e137c8d4aaa"
+    },
+    "git_rev": null
+  },
+  "corpus": {
+    "calib.jsonl": "792265ebfcef0269",
+    "capability.jsonl": "6a11bfa4120359ac",
+    "dev.jsonl": "b55e31965e95130c",
+    "test.jsonl": "705ace128416c45c",
+    "train.jsonl": "f7412ede82be829f"
+  },
+  "model": {
+    "base": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dtype": "float16",
+    "device": "mps",
+    "attn_implementation": "sdpa",
+    "escalated_from": null
+  },
+  "criterion": {
+    "alpha": 0.02,
+    "alpha_ci": 0.05,
+    "gamma_default": 0.05,
+    "target_precision": 0.3,
+    "capability_ceiling": 0.02,
+    "calibration_margin": null,
+    "_gamma_effective": 0.02
+  },
+  "seed": 20260820,
+  "platform": {
+    "python": "3.12.13",
+    "system": "Darwin",
+    "machine": "arm64"
+  },
+  "complete": true,
+  "selected": {
+    "round": 1,
+    "basis": "verdict",
+    "reason": "earliest round meeting the criterion"
+  },
+  "last_round": 1,
+  "result": {
+    "round": 1,
+    "miss_rate": 0.0016666666666666668,
+    "miss_upper_95": 0.007435458911310269,
+    "false_alarm": 0.018333333333333333,
+    "false_alarm_ci95": [
+      0.010267306165938218,
+      0.032527799143926804
+    ],
+    "capability_false_alarm": 0.0,
+    "holdout_miss_rate": 0.005,
+    "precision_at_prevalence": 0.9477848101265823,
+    "stop_reason": "criterion_met"
+  },
+  "predicates_instilled": [
+    "date_half",
+    "two_parties"
+  ],
+  "predicates_declared": [
+    "date_half",
+    "odd_count",
+    "two_parties"
+  ],
+  "predicates_proposed": [],
+  "nominations_rejected": []
+}

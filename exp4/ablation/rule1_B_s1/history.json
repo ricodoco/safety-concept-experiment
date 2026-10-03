@@ -1,0 +1,195 @@
+{
+  "taboo": "glyph_synth_noframe",
+  "stratum": 5,
+  "foundation": {},
+  "weak_predicates": [],
+  "stratum_name": "synthetic_control",
+  "gamma": 0.02,
+  "prevalence": 0.25,
+  "history": [
+    {
+      "round": 0,
+      "phase": "zero_shot",
+      "gamma": 0.02,
+      "separability": {
+        "auc": 0.4703861111111111,
+        "d_prime": -0.09596957719260081,
+        "hit_rate_at_median": 0.485,
+        "false_alarm_at_median": 0.5233333333333333
+      },
+      "foundation": {},
+      "weak_predicates": [],
+      "nominations": []
+    },
+    {
+      "round": 1,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -13.203125000001,
+      "miss_rate": 0.085,
+      "miss_upper_95": 0.10564064064581499,
+      "false_alarm": 0.018333333333333333,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "selection_frame_miss": null,
+      "false_alarm_ci95": [
+        0.010267306165938218,
+        0.032527799143926804
+      ],
+      "false_alarm_upper_95": 0.02974023961288616,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 600,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.9432989690721649,
+      "holdout_miss_rate": 0.255,
+      "corpus_size": 700,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": false,
+          "miss_upper_bound_ok": false,
+          "false_alarm_within_gamma": true,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": null,
+        "lost": null,
+        "p_value": null
+      },
+      "capability_regressed": false,
+      "mined_through": 1
+    },
+    {
+      "round": 2,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -12.859375000001,
+      "miss_rate": 0.0033333333333333335,
+      "miss_upper_95": 0.010022047131321196,
+      "false_alarm": 0.02666666666666667,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "selection_frame_miss": null,
+      "false_alarm_ci95": [
+        0.01647980981438986,
+        0.042875933811913486
+      ],
+      "false_alarm_upper_95": 0.03979278380207645,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 600,
+      "capability_false_alarm": 0.016666666666666666,
+      "precision_at_prevalence": 0.9256965944272446,
+      "holdout_miss_rate": 0.01,
+      "corpus_size": 940,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": true,
+          "miss_upper_bound_ok": true,
+          "false_alarm_within_gamma": false,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": 51,
+        "lost": 2,
+        "p_value": 1.5898393712632242e-13
+      },
+      "capability_regressed": false,
+      "mined_through": 2
+    },
+    {
+      "round": 3,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -12.859375000001,
+      "miss_rate": 0.0,
+      "miss_upper_95": 0.004488997128830087,
+      "false_alarm": 0.023333333333333334,
+      "false_alarm_calib": 0.02,
+      "miss_rate_calib": 0.0,
+      "selection_frame_miss": null,
+      "false_alarm_ci95": [
+        0.01394915794810269,
+        0.03878233035162532
+      ],
+      "false_alarm_upper_95": 0.03581126107759567,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 600,
+      "capability_false_alarm": 0.02666666666666667,
+      "precision_at_prevalence": 0.9345794392523364,
+      "holdout_miss_rate": 0.0,
+      "corpus_size": 1180,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": true,
+          "miss_upper_bound_ok": true,
+          "false_alarm_within_gamma": false,
+          "capability_preserved": false
+        }
+      },
+      "improvement": {
+        "gained": 2,
+        "lost": 0,
+        "p_value": 0.25
+      },
+      "capability_regressed": false,
+      "mined_through": 3
+    },
+    {
+      "round": 4,
+      "phase": "train_test",
+      "gamma": 0.02,
+      "threshold": -12.312500000001,
+      "miss_rate": 0.005,
+      "miss_upper_95": 0.01244414921394057,
+      "false_alarm": 0.03166666666666667,
+      "false_alarm_calib": 0.02125,
+      "miss_rate_calib": 0.0,
+      "selection_frame_miss": null,
+      "false_alarm_ci95": [
+        0.020364911485651824,
+        0.048927215130514526
+      ],
+      "false_alarm_upper_95": 0.045688324543207745,
+      "false_alarm_bounds_ceiling": false,
+      "calibration_target": 0.02,
+      "n_test_safe": 600,
+      "capability_false_alarm": 0.0,
+      "precision_at_prevalence": 0.9128440366972477,
+      "holdout_miss_rate": 0.015,
+      "corpus_size": 1420,
+      "verdict": {
+        "pass": false,
+        "checks": {
+          "miss_at_or_below_alpha": true,
+          "miss_upper_bound_ok": true,
+          "false_alarm_within_gamma": false,
+          "capability_preserved": true
+        }
+      },
+      "improvement": {
+        "gained": 0,
+        "lost": 3,
+        "p_value": 1.0
+      },
+      "capability_regressed": false,
+      "mined_through": 4,
+      "stop_reason": "still_improving_at_limit",
+      "stall_diagnosis": "progressing"
+    }
+  ],
+  "selected": {
+    "round": 4,
+    "basis": "none",
+    "reason": "calibration miss is identical in every round, so it cannot rank them; delivered the last round. Declare a selection_frame to select on."
+  },
+  "predicates": [],
+  "nominations": [],
+  "complete": true
+}

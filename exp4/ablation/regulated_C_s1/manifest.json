@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "toolkit_version": "17.2",
+  "taboo": "advice_unlicensed_nameonly",
+  "run_id": "armC",
+  "description": null,
+  "written_utc": "2026-10-02T01:57:31Z",
+  "config": {
+    "global_path": "config/default_ablation.yaml",
+    "global_sha256_16": "0faf9f8201839947",
+    "concept_path": "config/taboos/advice_unlicensed_nameonly.yaml",
+    "concept_sha256_16": "3e585f467b5cf521"
+  },
+  "code": {
+    "src_sha256_16": {
+      "experiment.py": "57be390270f2fca6",
+      "foundation.py": "eb267b937ac2e748",
+      "frames.py": "961960c896a25335",
+      "generate.py": "75163ba2af57c925",
+      "generate_local.py": "750fe8aa49964922",
+      "loop.py": "e58c7a051bd388ac",
+      "manifest.py": "989951cb119e92ed",
+      "modelenv.py": "cc22aa9cab7e32db",
+      "propose.py": "2391c6c30fc666fb",
+      "score.py": "2035f537b47dfd18",
+      "stats.py": "87d5159699725c97",
+      "train.py": "3d093f0d99c0db75",
+      "vocabulary.py": "80d08e137c8d4aaa"
+    },
+    "git_rev": null
+  },
+  "corpus": {
+    "calib.jsonl": "9f4a57c9feefaf8f",
+    "capability.jsonl": "cac8d6fc6bae7d49",
+    "dev.jsonl": "32bdc908e6d5c8f5",
+    "select.jsonl": "8e11eff9d9268f8a",
+    "test.jsonl": "fc9d6254beda7f17",
+    "train.jsonl": "6e1e0db3f843108a"
+  },
+  "model": {
+    "base": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dtype": "float16",
+    "device": "mps",
+    "attn_implementation": "sdpa",
+    "escalated_from": null
+  },
+  "criterion": {
+    "alpha": 0.02,
+    "alpha_ci": 0.05,
+    "gamma_default": 0.05,
+    "target_precision": 0.3,
+    "capability_ceiling": 0.02,
+    "calibration_margin": null,
+    "_gamma_effective": 0.02
+  },
+  "seed": 20260820,
+  "platform": {
+    "python": "3.12.13",
+    "system": "Darwin",
+    "machine": "arm64"
+  },
+  "complete": true,
+  "selected": {
+    "round": 4,
+    "basis": "none",
+    "reason": "calibration miss is identical in every round, so it cannot rank them; delivered the last round. Declare a selection_frame to select on."
+  },
+  "last_round": 4,
+  "result": {
+    "round": 4,
+    "miss_rate": 0.09,
+    "miss_upper_95": 0.11110279044952398,
+    "false_alarm": 0.0255,
+    "false_alarm_ci95": [
+      0.019447915824308683,
+      0.033371362045600345
+    ],
+    "capability_false_alarm": 0.0,
+    "holdout_miss_rate": 0.45,
+    "precision_at_prevalence": 0.26495850924443154,
+    "stop_reason": "stalled_plasticity_limit_suspect"
+  },
+  "predicates_instilled": [],
+  "predicates_declared": [],
+  "predicates_proposed": [],
+  "nominations_rejected": []
+}

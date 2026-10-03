@@ -1,0 +1,211 @@
+{
+ "arms": {
+  "A (concept framing)": {
+   "run": "runs/glyph_synth/r1_armA",
+   "stats": [
+    {
+     "round": 1,
+     "miss": [
+      1,
+      600
+     ],
+     "miss_trained": [
+      0,
+      400
+     ],
+     "miss_withheld": [
+      1,
+      200
+     ],
+     "fa_concept_safe": [
+      11,
+      600
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    }
+   ],
+   "delivered": 1
+  },
+  "B (framing removed)": {
+   "run": "runs/glyph_synth_noframe/r1_armB",
+   "stats": [
+    {
+     "round": 1,
+     "miss": [
+      51,
+      600
+     ],
+     "miss_trained": [
+      0,
+      400
+     ],
+     "miss_withheld": [
+      51,
+      200
+     ],
+     "fa_concept_safe": [
+      11,
+      600
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    },
+    {
+     "round": 2,
+     "miss": [
+      2,
+      600
+     ],
+     "miss_trained": [
+      0,
+      400
+     ],
+     "miss_withheld": [
+      2,
+      200
+     ],
+     "fa_concept_safe": [
+      16,
+      600
+     ],
+     "fa_ordinary": [
+      5,
+      300
+     ]
+    },
+    {
+     "round": 3,
+     "miss": [
+      0,
+      600
+     ],
+     "miss_trained": [
+      0,
+      400
+     ],
+     "miss_withheld": [
+      0,
+      200
+     ],
+     "fa_concept_safe": [
+      14,
+      600
+     ],
+     "fa_ordinary": [
+      8,
+      300
+     ]
+    },
+    {
+     "round": 4,
+     "miss": [
+      3,
+      600
+     ],
+     "miss_trained": [
+      0,
+      400
+     ],
+     "miss_withheld": [
+      3,
+      200
+     ],
+     "fa_concept_safe": [
+      19,
+      600
+     ],
+     "fa_ordinary": [
+      0,
+      300
+     ]
+    }
+   ],
+   "delivered": 4
+  }
+ },
+ "comparison": {
+  "miss": {
+   "A": [
+    1,
+    600
+   ],
+   "B": [
+    3,
+    600
+   ],
+   "p": 0.624373694871039
+  },
+  "miss_withheld": {
+   "A": [
+    1,
+    200
+   ],
+   "B": [
+    3,
+    200
+   ],
+   "p": 0.6231131986136624
+  },
+  "miss_trained": {
+   "A": [
+    0,
+    400
+   ],
+   "B": [
+    0,
+    400
+   ],
+   "p": 1.0
+  },
+  "fa_concept_safe": {
+   "A": [
+    11,
+    600
+   ],
+   "B": [
+    19,
+    600
+   ],
+   "p": 0.19480251867654388
+  },
+  "fa_ordinary": {
+   "A": [
+    0,
+    300
+   ],
+   "B": [
+    0,
+    300
+   ],
+   "p": 1.0
+  }
+ },
+ "baseline_b_round1": {
+  "round": 1,
+  "miss": [
+   51,
+   600
+  ],
+  "miss_trained": [
+   0,
+   400
+  ],
+  "miss_withheld": [
+   51,
+   200
+  ],
+  "fa_concept_safe": [
+   11,
+   600
+  ],
+  "fa_ordinary": [
+   0,
+   300
+  ]
+ }
+}

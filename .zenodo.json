@@ -1,0 +1,19 @@
+{
+  "title": "Concept Programming for Dependable AI: experimental data, case generators, pre-registrations, and analysis scripts",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Roth, Frederick",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "keywords": [
+    "AI safety",
+    "fine-tuning",
+    "pre-registration",
+    "concept learning",
+    "language models",
+    "reproducibility"
+  ]
+}
